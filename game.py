@@ -1,3 +1,5 @@
+import random
+
 class Game:
 
 	def __init__(self, word):
@@ -65,7 +67,9 @@ class Game:
 				convertedWord.append("[_]")
 		print " ".join(convertedWord)
 
-our_game = Game("mouse")
+animals = ["mouse", "pig", "duck", "cow"]
+picked_animal = random.choice(animals)
+our_game = Game(picked_animal)
 our_game.show_lives()
 our_game.hide_word()
 letter = our_game.get_letter()
