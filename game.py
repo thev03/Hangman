@@ -34,10 +34,10 @@ class Game:
 		else:
 			self.reduce_lives()			
 			self.after_bad_guess()
-
+s
 	def after_good_guess(self):
 		if len(self.goodGuesses) == len(self.word):
-			print "YOU WON!!"
+			print """YOU WON !!                                                                      <<<<||||||>>>>> FIREWORKS AND CONFETTI  :) <<<<||||||>>>>>!!"""
 		if self.lives > 0 and len(self.goodGuesses) != len(self.word): 
 			letter = self.get_letter()
 			self.evaluate_guess(letter)
@@ -67,7 +67,7 @@ class Game:
 				convertedWord.append("[_]")
 		print " ".join(convertedWord)
 
-animals = ["mouse", "pig", "duck", "cow"]
+animals = ["duck", "hare", "wolf", "bear", "bird", "spider", "tiger", "chipmunk", "dolphin", "donkey"]
 picked_animal = random.choice(animals)
 our_game = Game(picked_animal)
 our_game.show_lives()
