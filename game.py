@@ -34,10 +34,10 @@ class Game:
 		else:
 			self.reduce_lives()			
 			self.after_bad_guess()
-s
+
 	def after_good_guess(self):
 		if len(self.goodGuesses) == len(self.word):
-			print """YOU WON !!                                                                      <<<<||||||>>>>> FIREWORKS AND CONFETTI  :) <<<<||||||>>>>>!!"""
+			print """YOU WON !!                                                                      <<<<||||||>>>>> FIREWORKS AND CONFETTI !!  :) <<<<||||||>>>>>"""
 		if self.lives > 0 and len(self.goodGuesses) != len(self.word): 
 			letter = self.get_letter()
 			self.evaluate_guess(letter)
